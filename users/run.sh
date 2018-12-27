@@ -1,3 +1,5 @@
 #!/bin/bash
-go build && ./${PWD##*/}
+name="${PWD##*/}"
+echo "Build and run $name"
+gofmt -w "$name".go && go build && ./"$name"
 

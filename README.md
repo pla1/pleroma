@@ -1,6 +1,10 @@
 # pleroma
 Pleroma hacking
 
+Requires Go
+
+`sudo apt install golang`
+
 DB queries require a PostrgreSQL driver. 
 
 `go get github.com/lib/pq`
