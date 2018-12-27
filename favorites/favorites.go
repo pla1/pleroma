@@ -1,3 +1,4 @@
+// Dumps the most favorited (liked) activity.
 package main
 
 import (

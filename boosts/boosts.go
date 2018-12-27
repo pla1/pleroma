@@ -1,3 +1,4 @@
+// Dumps the activity with the most boosts (announcements).
 package main
 
 import (
@@ -25,7 +26,7 @@ func main() {
 		if quantity > highest {
 			highest = quantity
 			high_id = id
-			fmt.Println("High so far: ", highest, high_id)
+			fmt.Printf("High so far. Quantity: %v ID: %v\n", highest, high_id)
 		}
 		checkErr(err)
 	}
