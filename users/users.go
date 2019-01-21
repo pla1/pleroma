@@ -20,7 +20,7 @@ func main() {
 	reg, err := regexp.Compile("[^a-zA-Z0-9]+")
 	checkErr(err)
 	fmt.Println("# Querying")
-	rows, err := db.Query("SELECT id, coalesce(name,''), coalesce(nickname,''), inserted_at FROM users")
+	rows, err := db.Query("SELECT id, coalesce(name,''), coalesce(nickname,''), inserted_at FROM users order by inserted_at")
 	checkErr(err)
 
 	for rows.Next() {
